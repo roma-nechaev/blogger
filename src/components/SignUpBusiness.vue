@@ -2,14 +2,16 @@
   <b-modal id="signUp-business" size="xl" hide-footer>
     <b-row>
       <b-col lg="2" class="text-center">
-        <b-avatar
-          badge="+"
-          badge-variant="dark"
-          variant="dark"
-          src="img/user.png"
-          size="6.5rem"
-          alt="Profile image"
-        ></b-avatar>
+        <div class="form-group">
+          <b-avatar
+            badge="+"
+            badge-variant="dark"
+            variant="dark"
+            src="img/user.png"
+            size="6.5rem"
+            alt="Profile image"
+          ></b-avatar>
+        </div>
       </b-col>
       <b-col lg="8">
         <b-form @submit.prevent="onSubmit">
@@ -114,7 +116,9 @@ export default {
   color: #fff;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
 }
-#signUp-business {
+
+#signUp-business,
+#signUp-blogger {
   .logo {
     margin-top: 100px;
   }
