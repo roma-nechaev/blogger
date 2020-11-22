@@ -134,6 +134,7 @@ export default {
   .btn-primary {
     padding: 0.75rem 100px;
   }
+
   a {
     color: #18a0fb;
     text-decoration: underline;

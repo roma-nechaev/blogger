@@ -36,4 +36,7 @@ body {
 button:focus {
   outline: none;
 }
+.col-form-label-sm {
+  color: #b4b4b4;
+}
 </style>
