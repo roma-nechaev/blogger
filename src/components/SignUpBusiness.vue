@@ -135,7 +135,7 @@ export default {
     padding: 0.75rem 100px;
   }
 
-  a {
+  .custom-control-label a {
     color: #18a0fb;
     text-decoration: underline;
   }

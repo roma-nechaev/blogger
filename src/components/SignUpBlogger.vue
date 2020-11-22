@@ -47,7 +47,10 @@
                 <b-form-input v-model="password" type="text" placeholder="Password*"></b-form-input>
               </b-form-group>
               <b-form-group>
-                <b-form-select v-model="language" :options="bloggingLanguage"></b-form-select>
+                <b-dropdown text="Blogging language *" variant="white">
+                  <b-dropdown-item>Russian</b-dropdown-item>
+                  <b-dropdown-item>English</b-dropdown-item>
+                </b-dropdown>
               </b-form-group>
             </b-col>
             <b-col lg="6">
@@ -144,11 +147,7 @@ export default {
       password: '',
       repeatPassword: '',
       language: null,
-      bloggingLanguage: [
-        { value: null, text: 'Blogging language *' },
-        { value: 'ru', text: 'Russian' },
-        { value: 'en', text: 'English' }
-      ],
+
       city: '',
 
       accept: false,
@@ -174,6 +173,40 @@ export default {
 .b-form-tag {
   padding: 0.5em 0.7em;
   font-size: 0.7rem;
+}
+.dropdown.btn-group {
+  display: block;
+}
+.btn-group.show .dropdown-toggle {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.dropdown-toggle::after {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+}
+.btn-white {
+  z-index: 1100 !important;
+  display: block;
+  width: 100%;
+  text-align: left;
+  height: calc(1.5em + 2rem + 2px);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8898aa;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 1.25rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.btn-white:focus {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.dropdown-menu {
+  margin-top: -20px;
 }
 #signUp-blogger {
   .social {
