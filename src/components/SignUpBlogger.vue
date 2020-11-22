@@ -12,6 +12,18 @@
             alt="Profile image"
           ></b-avatar>
         </div>
+        <router-link to="/facebook" class="social social-youtube">
+          <font-awesome-icon :icon="['fab', 'youtube']" />
+          <span class="sr-only">Youtube</span>
+        </router-link>
+        <router-link to="/facebook" class="social social-facebook">
+          <font-awesome-icon :icon="['fab', 'facebook-square']" />
+          <span class="sr-only">Facebook</span>
+        </router-link>
+        <router-link to="/facebook" class="social social-instagram">
+          <font-awesome-icon :icon="['fab', 'instagram']" />
+          <span class="sr-only">Instagram</span>
+        </router-link>
       </b-col>
       <b-col lg="8">
         <b-form @submit.prevent="onSubmit">
@@ -164,6 +176,20 @@ export default {
   font-size: 0.7rem;
 }
 #signUp-blogger {
+  .social {
+    font-size: 30px;
+    margin-bottom: 0.75rem;
+    display: block;
+    &.social-youtube {
+      color: #ff0000;
+    }
+    &.social-facebook {
+      color: #3c5a9a;
+    }
+    &.social-instagram {
+      color: #e4405f;
+    }
+  }
   .male-radio {
     padding: 1.6rem 15px;
     .custom-control {

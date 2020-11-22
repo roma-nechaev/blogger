@@ -11,7 +11,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle as faCheckCircleReg } from '@fortawesome/free-regular-svg-icons';
 
-import { faFacebookSquare, faGoogle, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebookSquare,
+  faGoogle,
+  faYoutube,
+  faInstagram
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 library.add(
   faPhoneAlt,
@@ -24,7 +29,8 @@ library.add(
   faCheckCircleReg,
   faFacebookSquare,
   faGoogle,
-  faYoutube
+  faYoutube,
+  faInstagram
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
